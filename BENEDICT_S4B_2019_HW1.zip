@@ -1,0 +1,18 @@
+#!/bin/sh
+#load the module
+source /opt/asn/etc/asn-bash-profiles-special/modules.sh
+module load mrbayes
+#run job
+mb nexus_batch_FILE1 >log.txt
+# >  directs standard output and overwrites anything that already exists
+
+
+#!/bin/sh
+#load the module
+source /opt/asn/etc/asn-bash-profiles-special/modules.sh
+module load beast/2.4.6
+java -jar lib/beast.jar FILE1.xml
+#make script executable
+#chmod +x myscript
+#run BEAST
+#run_script myscript
